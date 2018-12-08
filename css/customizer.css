@@ -20,18 +20,21 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 a.navbar-brand {
-    height: 120px;
+    height: 100px;
     padding:0;
+    float:none;
+    display: inline-block;
+    max-width: 350px;
 }
 a.navbar-brand img {
-    width:auto;
-    height: 100%;
-    max-width:350px;
+    width:100%;
+    height: auto;
+    float:none;
     padding:20px 0;
 }
 
 .navbar {
-    background:rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.8);
     border:0;
 }
 
@@ -45,7 +48,7 @@ ul.nav.navbar-nav li {
     -ms-transition: all 333ms ease-in-out;
     -o-transition: all 333ms ease-in-out;
     transition: all 333ms ease-in-out;
-    padding:30px 0;
+    padding:10px 0;
 }
 ul.nav.navbar-nav li a {
     -webkit-transition: all 333ms ease-in-out;
@@ -53,8 +56,8 @@ ul.nav.navbar-nav li a {
 -ms-transition: all 333ms ease-in-out;
 -o-transition: all 333ms ease-in-out;
 transition: all 333ms ease-in-out;
-    height:60px;
-    line-height: 60px;
+    height:50px;
+    line-height: 50px;
     padding:0 20px;
     background:transparent;
     position: relative;
@@ -223,6 +226,58 @@ section {
     max-width: 720px;
     margin:auto;
     padding:20px 0 0 0;
+}
+
+/* CHART */
+
+.chart-container {
+  padding:40px 0;
+}
+
+.chart {
+  max-width:640px;
+  padding:0;
+  margin:0 auto 20px auto;
+  color:#333;
+}
+
+.chart-bar {
+  height:36px;
+  line-height: 36px;
+  position: relative;
+  border:2px solid #666;
+}
+
+span.movingChart {
+  background: #67b54b;
+  height: 32px;
+  width:0%;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 1111ms ease-in-out;
+  -moz-transition: all 1111ms ease-in-out;
+  -ms-transition: all 1111ms ease-in-out;
+  -o-transition: all 1111ms ease-in-out;
+  transition: all 1111ms ease-in-out; 
+}
+span.chart-data {
+  line-height: 110%;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  top:50%;
+  right:10px;
+  padding-left:10px;
+  margin-top:-6px;
+  width:120px;
+}
+span.description {
+  line-height: 36px;
+  font-weight: 600;
+  text-align: right;
+  display: inline-block;
+  width:100%;
 }
 
 /* ICONS */
