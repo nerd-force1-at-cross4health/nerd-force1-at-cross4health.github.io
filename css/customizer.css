@@ -1,0 +1,329 @@
+/*
+EKG Customized CSS
+*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,800');
+@font-face {
+    font-family: 'heartbean';
+    src:  url('../fonts/heartbean.eot?716bxo');
+    src:  url('../fonts/heartbean.eot?716bxo#iefix') format('embedded-opentype'),
+      url('../fonts/heartbean.ttf?716bxo') format('truetype'),
+      url('../fonts/heartbean.woff?716bxo') format('woff'),
+      url('../fonts/heartbean.svg?716bxo#heartbean') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html, body {
+    padding:0;
+    margin:0;
+    background:#fff;
+    font-family: 'Nunito', sans-serif;
+}
+a.navbar-brand {
+    height: 120px;
+    padding:0;
+}
+a.navbar-brand img {
+    width:auto;
+    height: 100%;
+    padding:20px 0;
+}
+
+.navbar {
+    background:rgba(255,255,255,0.5);
+    border:0;
+}
+
+
+ul.nav.navbar-nav {
+    padding:20px 0;
+}
+ul.nav.navbar-nav li {
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    padding:30px 0;
+}
+ul.nav.navbar-nav li a {
+    -webkit-transition: all 333ms ease-in-out;
+-moz-transition: all 333ms ease-in-out;
+-ms-transition: all 333ms ease-in-out;
+-o-transition: all 333ms ease-in-out;
+transition: all 333ms ease-in-out;
+    height:60px;
+    line-height: 60px;
+    padding:0 20px;
+    background:transparent;
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul.nav.navbar-nav li a:before {
+    color:#67b54b;
+    content: "\e900";
+    font-family: "heartbean";
+    position: absolute;
+    left:-3px;
+    top:-12px;
+    font-size:1px;
+    -webkit-transition: all 456ms ease-in-out;
+-moz-transition: all 456ms ease-in-out;
+-ms-transition: all 456ms ease-in-out;
+-o-transition: all 456ms ease-in-out;
+transition: all 456ms ease-in-out;  
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover,
+ul.nav.navbar-nav li.active {
+    background:transparent;
+}
+
+ul.nav.navbar-nav li a:hover {
+    color:#67b54b;
+}
+
+ul.nav.navbar-nav li a:hover:before {
+    font-size: 30px
+}
+
+/* STAGE */
+
+.stage-container {
+    position: relative;
+    z-index: 3;
+}
+
+img.stage-image {
+    width:100%;
+    height:auto;
+}
+
+.stage-text {
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom:80px;
+    
+}
+
+
+.stage-text h1 {
+    font-weight: 700;
+    color:#67b54b;
+    text-transform: uppercase;
+    font-size:90px;
+    padding:0;
+    margin:0;
+    text-shadow:0px 0px 10px rgba(0,0,0,0.3)
+}
+.stage-text h1 span {
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+.stage-text h3 {
+    padding:0;
+    margin:0;
+    font-size:40px;
+}
+
+.stage-text h4 {
+    padding:0;
+    margin:0;
+    font-size:30px;
+}
+
+.stage-text .col-sm-6 {
+    padding-top:40px;
+    padding-bottom:40px;
+    position: relative;
+    z-index: 2;
+}
+
+.stage-text .col-sm-6:before {
+    content:"";
+    position: absolute;
+    right:0;
+    bottom:0;
+    height:100%;
+    width:99999px;
+    background:rgba(255,255,255,0.1);
+    border-radius: 22px;
+    z-index: -1;
+}
+
+/* SECTION BREAKER */
+.breaker-text {
+    padding:10px 0;
+    margin:40px 0;
+    text-align: center;
+    border-top:80px solid #67b54b;
+    border-bottom:80px solid #67b54b;
+}
+
+.breaker-text h6 {
+    position: absolute;
+    left:0;
+    top:-200px;
+    right:0;
+    opacity: 1.0;
+}
+
+.breaker-text .alignHelper img {
+    width:100%;
+    height: auto;
+    max-width: 1024px;
+    margin:auto;
+    display: block;
+}
+
+
+/* TEXT */
+
+section {
+    padding:40px;
+    position: relative;
+    overflow: hidden;
+    background-color:#fff;
+    background-attachment: fixed;
+}
+
+
+.text.center {
+    text-align: center;
+}
+
+.text h2 {
+    font-weight: 700;
+    color:#67b54b;
+    text-transform: uppercase;
+    font-size:90px;
+    padding:0;
+    margin:0;
+}
+.text h2 span {
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+.text h4 {
+    color:#68b54b;
+    font-size:30px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 720px;
+    margin:auto;
+    padding:20px 0 0 0;
+}
+
+/* ICONS */
+
+.icon-heartbean:before {
+    content: "\e900";
+    color: #68b54b;
+  }
+  .icon-home3:before {
+    content: "\e902";
+  }
+  .icon-office:before {
+    content: "\e903";
+  }
+  .icon-pencil:before {
+    content: "\e905";
+  }
+  .icon-droplet:before {
+    content: "\e90b";
+  }
+  .icon-paint-format:before {
+    content: "\e90c";
+  }
+  .icon-podcast:before {
+    content: "\e91c";
+  }
+  .icon-feed:before {
+    content: "\e91d";
+  }
+  .icon-file-empty:before {
+    content: "\e924";
+  }
+  .icon-file-text2:before {
+    content: "\e926";
+  }
+  .icon-lifebuoy:before {
+    content: "\e941";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-pushpin:before {
+    content: "\e946";
+  }
+  .icon-location:before {
+    content: "\e947";
+  }
+  .icon-location2:before {
+    content: "\e948";
+  }
+  .icon-map:before {
+    content: "\e94b";
+  }
+  .icon-alarm:before {
+    content: "\e950";
+  }
+  .icon-stopwatch:before {
+    content: "\e952";
+  }
+  .icon-calendar:before {
+    content: "\e953";
+  }
+  .icon-printer:before {
+    content: "\e954";
+  }
+  .icon-keyboard:before {
+    content: "\e955";
+  }
+  .icon-display:before {
+    content: "\e956";
+  }
+  .icon-laptop:before {
+    content: "\e957";
+  }
+  .icon-mobile:before {
+    content: "\e958";
+  }
+  .icon-equalizer:before {
+    content: "\e992";
+  }
+  .icon-aid-kit:before {
+    content: "\e998";
+  }
+  .icon-pie-chart:before {
+    content: "\e99a";
+  }
+  .icon-stats-dots:before {
+    content: "\e99b";
+  }
+  .icon-trophy:before {
+    content: "\e99e";
+  }
+  .icon-leaf:before {
+    content: "\e9a4";
+  }
+  .icon-fire:before {
+    content: "\e9a9";
+  }
+  .icon-shield:before {
+    content: "\e9b4";
+  }
+  .icon-earth:before {
+    content: "\e9ca";
+  }
+  
